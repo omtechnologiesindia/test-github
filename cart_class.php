@@ -28,6 +28,18 @@ class omtechCart {
        
     } 
 
+    if($notes !== ''){
+					$outputData[]=$data[9];
+
+					$outputData[]=$notes;
+					echo($outputData[0]);
+					echo("<br>");
+					echo($outputData[1]);
+					echo("<br>");
+
+					fputcsv($file6, $outputData);
+				}
+
 } 
 
 
