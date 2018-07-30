@@ -16,7 +16,7 @@ class omtechCart {
 
 
 
-    public function addToCart($productArray) {
+    public function addToCartNow($productArray) {
     	$prodId=$_SESSION['prodId']+1 ;
     	$_SESSION['prodId']=$prodId;
        $_SESSION['product'][$prodId]=$productArray;
@@ -27,11 +27,7 @@ class omtechCart {
        unset($_SESSION['product'][$prodId]);
        
     } 
-    public function cartContentAsArray() {
-    	
-       
-       return $_SESSION['product'];
-    } 
+
 } 
 
 
